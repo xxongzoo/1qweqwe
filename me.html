@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/me2.css">
+    <title>Am I...</title>
+
+
+</head>
+
+<body>
+  <audio autoplay loop>
+    <source src="bug.mp3" type="audio/mpeg">
+  </audio>
+  <div class="ina2"> 
+    <a href="https://xxongzoo.github.io/xxongzoo/">
+        <img src="img/fll.png" id="moving-image" style="width: 150px; position: absolute; z-index: 999;">
+    </a></div>
+    
+
+  <!-- <img src="img/fll.png" id="moving-image" style="width: 150px; position: absolute; z-index: 999;"> -->
+
+  <script>
+    // Move the image smoothly
+    function moveImage() {
+      var image = document.getElementById('moving-image');
+      var maxWidth = window.innerWidth - image.offsetWidth;
+      var maxHeight = window.innerHeight - image.offsetHeight;
+      var randomX = Math.floor(Math.random() * maxWidth);
+      var randomY = Math.floor(Math.random() * maxHeight);
+      image.style.transform = `translate(${randomX}px, ${randomY}px)`;
+    }
+
+    // Move the image every 2 seconds
+    setInterval(moveImage, 2000);
+  </script>
+
+    <img src="img/b1.gif" id="back";>
+    <img src="img/back4.png" id="back2";>
+    <div class="gom">
+        <img src="img/gom.png"></div>
+
+</body>
+</html>
